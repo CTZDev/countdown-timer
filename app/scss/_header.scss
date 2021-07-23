@@ -1,0 +1,28 @@
+body {
+  background: url(../images/bg-stars.svg), linear-gradient(0deg, var(--clr-dark-blue-a) 31%, var(--clr-dark-blue-b) 100%);
+}
+
+.main-header {
+  padding-top: 8.75rem;
+  padding-bottom: 3.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--clr-white);
+  font-size: 0.8rem;
+  width: 100%;
+
+  > h1 > span {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    font-size: 1rem;
+    padding-bottom: 6.25rem;
+    > h1 > span {
+      display: initial;
+    }
+  }
+}
