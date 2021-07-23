@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="dist/style.css" />
-    <script defer src="./app/js/script.js"></script>
+    <script defer src="./app/js/script.js" type="module"></script>
     <title>Frontend Mentor | Launch countdown timer</title>
   </head>
   <body>
@@ -17,29 +17,28 @@
       <section class="countdown">
         <div class="countdown-timer">
           <div class="countdown-timer-number">
-            08
+            <span id="day"></span>
             <span class="countdown-timer-number-shadow"></span>
           </div>
-
           <div class="countdown-timer-text">Days</div>
         </div>
         <div class="countdown-timer">
           <div class="countdown-timer-number">
-            23
+            <span id="hour"></span>
             <span class="countdown-timer-number-shadow"></span>
           </div>
           <div class="countdown-timer-text">hours</div>
         </div>
         <div class="countdown-timer">
           <div class="countdown-timer-number">
-            55
+            <span id="minute"></span>
             <span class="countdown-timer-number-shadow"></span>
           </div>
           <div class="countdown-timer-text">Minutes</div>
         </div>
         <div class="countdown-timer">
           <div class="countdown-timer-number">
-            41
+            <span id="second"></span>
             <span class="countdown-timer-number-shadow"></span>
           </div>
           <div class="countdown-timer-text">Seconds</div>

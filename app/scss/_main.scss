@@ -17,8 +17,16 @@
       border-radius: 6px;
       position: relative;
       z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 650ms ease-in, background-color 650ms ease-in;
 
-      //generar box shadow
+      &.active {
+        transform: translateY(4%) scale(1.018);
+        background-color: var(--clr-dark-blue-b);
+      }
+
       &-shadow {
         display: block;
         height: 10px;
@@ -60,6 +68,7 @@
       }
 
       &::before {
+        content: attr(data-content);
         top: 0;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
