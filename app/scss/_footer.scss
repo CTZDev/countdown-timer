@@ -17,8 +17,16 @@
     transform: translate(-50%, -50%);
     width: 100%;
 
-    > a:not(:last-child) {
-      margin-right: 1.5rem;
+    > a {
+      display: inline-block;
+
+      &:hover {
+        filter: invert(45%) sepia(52%) saturate(667%) hue-rotate(295deg) brightness(105%) contrast(97%);
+      }
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
     }
   }
 }

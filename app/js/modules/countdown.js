@@ -34,7 +34,7 @@ export default function countDown(dateFuture) {
     changeStyleforLength($days, $hours, $minutes, $seconds);
   };
 
-  //Cambiar la fuente y el padding de todos los parametros pasados dentro de la funcion
+  //Cambiar la fuente y el padding de todos los argumentos pasados dentro de la funcion
   function changeStyleforLength() {
     if ($days.textContent.length > 2) {
       Array.from(arguments).forEach((arg) => {
